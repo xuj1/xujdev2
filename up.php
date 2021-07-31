@@ -1,7 +1,7 @@
 <?php
 $secret_key = "5194ww9060-=340543"; //Set this as your secret key, to prevent others uploading to your server.
 $sharexdir = "images/"; //This is your file dir, also the link..
-$domain_url = 'http://xuj.rocks/'; //Add an S at the end of HTTP if you have a SSL certificate.
+$domain_url = 'https://xuj.rocks/'; //Add an S at the end of HTTP if you have a SSL certificate.
 $lengthofstring = 5; //Length of the file name
 
 function RandomString($length) {
@@ -24,7 +24,7 @@ if(isset($_POST['secret']))
 
         if (move_uploaded_file($_FILES["sharex"]["tmp_name"], $sharexdir.$filename.'.'.$fileType))
         {
-            echo $domain_url.$sharexdir.$filename.'.'.$fileType;
+            echo $domain_url.$sharexdir.$gitfilename.'.'.$fileType;
         }
             else
         {
