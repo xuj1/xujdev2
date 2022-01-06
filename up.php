@@ -1,7 +1,7 @@
 <?php
 $secret_key = "yhre5j80uw4t9j0t2340ji4t"; //Set this as your secret key, to prevent others uploading to your server.
 $sharexdir = "screenshots/"; //This is your file dir, also the link..
-$domain_url = 'http://xuj.rocks/'; //Add an S at the end of HTTP if you have a SSL certificate.
+$domain_url = 'https://xuj.rocks/'; //Add an S at the end of HTTP if you have a SSL certificate.
 $lengthofstring = 5; //Length of the file name
 
 function RandomString($length) {
